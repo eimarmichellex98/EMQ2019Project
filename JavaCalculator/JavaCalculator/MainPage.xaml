@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JavaCalculator"
+             x:Class="JavaCalculator.MainPage">
+
+    <StackLayout x:Name="ContentPage" HorizontalOptions="Center" 
+                 VerticalOptions="CenterAndExpand" BackgroundColor="MediumPurple">
+
+        <!--Entry boxes to get users results-->
+        <Label Text="Your own Java Calculator" HorizontalOptions="Center"/>
+        <Entry x:Name="MCQ1" Placeholder="Please enter your first MCQ result out of 20:"/>
+        <Entry x:Name="MCQ2" Placeholder="Please enter your second MCQ result out of 20:"/>
+        <Entry x:Name="LabExam" Placeholder="Please enter your Lab Exam result out of 50:"/>
+        <Entry x:Name="Attendance" Placeholder="Please enter your Attendance mark out of 10:"/>
+
+        <!--Button to calculate grade-->
+        <Button x:Name="btnCalculate" Text="Calculate" Clicked="BtnCalculate_Clicked" />
+
+        <!--Label box to output overall grade-->
+        <Label x:Name="TotalGrade" Text="Your overall grade for Software Design and Program Development is:"/>
+    </StackLayout>
+
+
+</ContentPage>
